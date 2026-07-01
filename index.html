@@ -1,0 +1,283 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>RA Trading Academy — Master the Markets · Kolhapur</title>
+  <meta name="description" content="RA Trading Academy (रा ट्रेडिंग एकेडमी) — Kolhapur's premier Forex & stock market trading institute. 5.0★ rated by 578 students. Learn trading from expert mentors." />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Sora:wght@300;400;500;600;700;800&family=Syne:wght@600;700;800&family=Space+Grotesk:wght@400;500;600&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="assets/css/style.css" />
+  <link rel="preconnect" href="https://cdnjs.cloudflare.com" />
+</head>
+<body>
+  <!-- Custom cursor -->
+  <div class="cursor" id="cursor"></div>
+  <div class="cursor-dot" id="cursorDot"></div>
+
+  <!-- Preloader -->
+  <div class="preloader" id="preloader">
+    <div class="preloader__inner">
+      <div class="preloader__logo">RA<span>.</span></div>
+      <div class="preloader__bar"><span id="preBar"></span></div>
+      <div class="preloader__count"><span id="preCount">0</span>%</div>
+    </div>
+  </div>
+
+  <!-- Scroll progress -->
+  <div class="scroll-progress" id="scrollProgress"></div>
+
+  <!-- Grain overlay -->
+  <div class="grain"></div>
+
+  <!-- Navigation -->
+  <header class="nav" id="nav">
+    <a href="#hero" class="nav__brand" data-hover>
+      <span class="nav__mark">RA</span>
+      <span class="nav__name">Trading Academy</span>
+    </a>
+    <nav class="nav__links">
+      <a href="#about" data-hover>About</a>
+      <a href="#courses" data-hover>Courses</a>
+      <a href="#why" data-hover>Why Us</a>
+      <a href="#reviews" data-hover>Reviews</a>
+      <a href="#contact" data-hover>Contact</a>
+    </nav>
+    <a href="tel:09665420707" class="nav__cta" data-hover>
+      <span>Book a Free Demo</span>
+    </a>
+    <button class="nav__burger" id="burger" aria-label="Menu"><span></span><span></span></button>
+  </header>
+
+  <!-- Mobile menu -->
+  <div class="menu" id="menu">
+    <a href="#about">About</a>
+    <a href="#courses">Courses</a>
+    <a href="#why">Why Us</a>
+    <a href="#reviews">Reviews</a>
+    <a href="#contact">Contact</a>
+    <a href="tel:09665420707" class="menu__cta">Book a Free Demo →</a>
+  </div>
+
+  <main data-scroll-container>
+
+    <!-- HERO -->
+    <section class="hero" id="hero">
+      <canvas id="heroCanvas"></canvas>
+      <div class="hero__glow"></div>
+      <div class="hero__inner">
+        <div class="hero__badge reveal">
+          <span class="pulse"></span> Kolhapur's #1 Rated Trading Institute · ★ 5.0 (578)
+        </div>
+        <h1 class="hero__title">
+          <span class="line"><span>Trade with</span></span>
+          <span class="line"><span class="grad">Confidence.</span></span>
+          <span class="line"><span>Master the</span></span>
+          <span class="line"><span class="grad">Markets.</span></span>
+        </h1>
+        <p class="hero__sub reveal">
+          रा ट्रेडिंग एकेडमी — where beginners become disciplined, profitable traders.
+          Learn Forex, stocks & technical analysis from mentors who trade for a living.
+        </p>
+        <div class="hero__actions reveal">
+          <a href="#courses" class="btn btn--primary" data-hover><span>Explore Courses</span><i>→</i></a>
+          <a href="#contact" class="btn btn--ghost" data-hover><span>Book Free Demo</span></a>
+        </div>
+        <div class="hero__stats reveal">
+          <div class="stat"><b data-count="578">0</b><small>5★ Reviews</small></div>
+          <div class="stat"><b data-count="2000" data-suffix="+">0</b><small>Students Trained</small></div>
+          <div class="stat"><b data-count="7" data-suffix="+">0</b><small>Years Experience</small></div>
+          <div class="stat"><b data-count="98" data-suffix="%">0</b><small>Would Recommend</small></div>
+        </div>
+      </div>
+      <div class="hero__scroll">
+        <span>Scroll</span>
+        <div class="hero__scroll-line"></div>
+      </div>
+    </section>
+
+    <!-- MARQUEE -->
+    <div class="marquee">
+      <div class="marquee__track">
+        <span>Forex Trading</span><i>✦</i><span>Technical Analysis</span><i>✦</i><span>Risk Management</span><i>✦</i><span>Price Action</span><i>✦</i><span>Live Sessions</span><i>✦</i><span>Candlestick Patterns</span><i>✦</i>
+        <span>Forex Trading</span><i>✦</i><span>Technical Analysis</span><i>✦</i><span>Risk Management</span><i>✦</i><span>Price Action</span><i>✦</i><span>Live Sessions</span><i>✦</i><span>Candlestick Patterns</span><i>✦</i>
+      </div>
+    </div>
+
+    <!-- ABOUT -->
+    <section class="about" id="about">
+      <div class="about__label reveal"><span></span>About the Academy</div>
+      <div class="about__grid">
+        <h2 class="about__head split">
+          We turn market curiosity into <em>real trading skill</em> — with structure, discipline and mentorship.
+        </h2>
+        <div class="about__body">
+          <p class="reveal">Based in the heart of Rajarampuri, Kolhapur, RA Trading Academy is an educational consultancy built on one belief: anyone can learn to trade well when they're taught properly. No hype, no shortcuts — just proven strategies, hands-on practice and honest mentoring.</p>
+          <p class="reveal">From your very first candlestick to managing risk like a professional, our step-by-step curriculum meets you where you are and takes you where you want to go.</p>
+          <div class="about__pills reveal">
+            <span>SEBI-aware teaching</span>
+            <span>Small batches</span>
+            <span>Lifetime doubt support</span>
+            <span>Live market practice</span>
+          </div>
+        </div>
+      </div>
+      <div class="about__cards">
+        <article class="acard reveal" data-tilt>
+          <div class="acard__num">01</div>
+          <h3>Learn the Foundations</h3>
+          <p>Markets, charts, terminology and psychology — a rock-solid base built for absolute beginners.</p>
+        </article>
+        <article class="acard reveal" data-tilt>
+          <div class="acard__num">02</div>
+          <h3>Practice Live</h3>
+          <p>Apply setups on real charts in guided sessions until reading price becomes second nature.</p>
+        </article>
+        <article class="acard reveal" data-tilt>
+          <div class="acard__num">03</div>
+          <h3>Trade Independently</h3>
+          <p>Graduate with a personal strategy, a risk plan and the discipline to execute it consistently.</p>
+        </article>
+      </div>
+    </section>
+
+    <!-- COURSES -->
+    <section class="courses" id="courses">
+      <div class="section-head">
+        <div class="about__label reveal"><span></span>Our Programs</div>
+        <h2 class="section-title split">Courses crafted to <em>make you profitable</em></h2>
+      </div>
+      <div class="courses__list">
+        <article class="course reveal" data-hover>
+          <div class="course__index">01</div>
+          <div class="course__main">
+            <h3>Forex Trading Mastery</h3>
+            <p>Currency pairs, sessions, leverage & a complete Forex playbook — our flagship, most-loved program.</p>
+          </div>
+          <div class="course__meta"><span>Beginner → Advanced</span><span>8 Weeks</span></div>
+          <div class="course__arrow">→</div>
+        </article>
+        <article class="course reveal" data-hover>
+          <div class="course__index">02</div>
+          <div class="course__main">
+            <h3>Technical Analysis Pro</h3>
+            <p>Indicators, chart patterns, support & resistance and multi-timeframe analysis that actually works.</p>
+          </div>
+          <div class="course__meta"><span>Intermediate</span><span>6 Weeks</span></div>
+          <div class="course__arrow">→</div>
+        </article>
+        <article class="course reveal" data-hover>
+          <div class="course__index">03</div>
+          <div class="course__main">
+            <h3>Price Action &amp; Candlesticks</h3>
+            <p>Read raw price like a pro — candlestick psychology, structure and high-probability entries.</p>
+          </div>
+          <div class="course__meta"><span>All Levels</span><span>4 Weeks</span></div>
+          <div class="course__arrow">→</div>
+        </article>
+        <article class="course reveal" data-hover>
+          <div class="course__index">04</div>
+          <div class="course__main">
+            <h3>Risk &amp; Money Management</h3>
+            <p>The skill that keeps traders alive — position sizing, R:R, drawdown control and trading psychology.</p>
+          </div>
+          <div class="course__meta"><span>Essential</span><span>2 Weeks</span></div>
+          <div class="course__arrow">→</div>
+        </article>
+      </div>
+    </section>
+
+    <!-- WHY US -->
+    <section class="why" id="why">
+      <div class="why__bg"></div>
+      <div class="section-head">
+        <div class="about__label reveal"><span></span>Why RA Trading Academy</div>
+        <h2 class="section-title split">Students rate us <em>5.0 out of 5</em> — here's why</h2>
+      </div>
+      <div class="why__grid">
+        <div class="why__item reveal"><div class="why__ico">◈</div><h3>Expert Mentors</h3><p>Learn from active traders with real, knowledgeable and friendly guidance every step.</p></div>
+        <div class="why__item reveal"><div class="why__ico">◆</div><h3>Proven Method</h3><p>A teaching method praised across 578 reviews for being clear, patient and beginner-friendly.</p></div>
+        <div class="why__item reveal"><div class="why__ico">❖</div><h3>Doubt Clearing</h3><p>"All doubt clearing" — supportive staff who make sure no question goes unanswered.</p></div>
+        <div class="why__item reveal"><div class="why__ico">✦</div><h3>Welcoming Space</h3><p>A friendly, professional environment where beginners feel comfortable from day one.</p></div>
+        <div class="why__item reveal"><div class="why__ico">◉</div><h3>Practical Focus</h3><p>Hands-on, live-market learning — not just theory, but skills you can actually trade with.</p></div>
+        <div class="why__item reveal"><div class="why__ico">✧</div><h3>Ongoing Support</h3><p>Soft-skills coaching and support staff that stay with you well beyond the classroom.</p></div>
+      </div>
+    </section>
+
+    <!-- REVIEWS -->
+    <section class="reviews" id="reviews">
+      <div class="section-head">
+        <div class="about__label reveal"><span></span>What Students Say</div>
+        <h2 class="section-title split">578 five-star reviews &amp; <em>counting</em></h2>
+        <div class="reviews__rating reveal">
+          <div class="stars">★★★★★</div>
+          <div><b>5.0</b> · 578 Google reviews</div>
+        </div>
+      </div>
+      <div class="reviews__track" id="reviewsTrack">
+        <div class="reviews__row">
+          <figure class="rcard"><div class="stars">★★★★★</div><blockquote>"I recently had the pleasure of attending RA Trading Academy, and it was an absolutely fantastic experience! From the moment I stepped in, I knew I was in for something special."</blockquote><figcaption><b>Kajal Sutar</b><span>Local Guide</span></figcaption></figure>
+          <figure class="rcard"><div class="stars">★★★★★</div><blockquote>"Best Forex Academy in Kolhapur. It was absolutely a great learning experience. Would recommend people to go ahead and join them."</blockquote><figcaption><b>Hitesh Rohra</b><span>Student</span></figcaption></figure>
+          <figure class="rcard"><div class="stars">★★★★★</div><blockquote>"Good class, proper teaching and all doubt clearing. Excellent coaching and support staff with great soft skills."</blockquote><figcaption><b>Gopal Kumbhar</b><span>Student</span></figcaption></figure>
+          <figure class="rcard"><div class="stars">★★★★★</div><blockquote>"A nice place for beginners and very friendly teaching. All staff and teachers are friendly and much knowledgeable."</blockquote><figcaption><b>Verified Student</b><span>Google Review</span></figcaption></figure>
+        </div>
+        <div class="reviews__row" aria-hidden="true">
+          <figure class="rcard"><div class="stars">★★★★★</div><blockquote>"I recently had the pleasure of attending RA Trading Academy, and it was an absolutely fantastic experience!"</blockquote><figcaption><b>Kajal Sutar</b><span>Local Guide</span></figcaption></figure>
+          <figure class="rcard"><div class="stars">★★★★★</div><blockquote>"Best Forex Academy in Kolhapur. Would recommend people to go ahead and join them."</blockquote><figcaption><b>Hitesh Rohra</b><span>Student</span></figcaption></figure>
+          <figure class="rcard"><div class="stars">★★★★★</div><blockquote>"Good class, proper teaching and all doubt clearing."</blockquote><figcaption><b>Gopal Kumbhar</b><span>Student</span></figcaption></figure>
+          <figure class="rcard"><div class="stars">★★★★★</div><blockquote>"A nice place for beginners and very friendly teaching."</blockquote><figcaption><b>Verified Student</b><span>Google Review</span></figcaption></figure>
+        </div>
+      </div>
+    </section>
+
+    <!-- CTA / CONTACT -->
+    <section class="contact" id="contact">
+      <div class="contact__inner">
+        <div class="contact__left">
+          <h2 class="split">Ready to start your <em>trading journey?</em></h2>
+          <p class="reveal">Book a free demo session and see how we teach. No pressure, no jargon — just an honest look at whether trading is right for you.</p>
+          <div class="contact__actions reveal">
+            <a href="tel:09665420707" class="btn btn--primary" data-hover><span>Call 096654 20707</span><i>→</i></a>
+            <a href="https://maps.google.com/?q=RA+Trading+Academy+Kolhapur" target="_blank" rel="noopener" class="btn btn--ghost" data-hover><span>Get Directions</span></a>
+          </div>
+        </div>
+        <div class="contact__card reveal">
+          <div class="contact__row"><span>Address</span><p>Rajlaxmi Chambers, B-1, 10th Lane, Rajarampuri, Kolhapur, Maharashtra 416008</p></div>
+          <div class="contact__row"><span>Phone</span><p><a href="tel:09665420707">096654 20707</a></p></div>
+          <div class="contact__row"><span>Hours</span><p>Open daily · Closes 8:00 PM</p></div>
+          <div class="contact__row"><span>Rating</span><p>★ 5.0 — 578 Google reviews</p></div>
+        </div>
+      </div>
+    </section>
+
+    <!-- FOOTER -->
+    <footer class="footer">
+      <div class="footer__big">RA Trading Academy</div>
+      <div class="footer__grid">
+        <div>
+          <div class="footer__mark">RA<span>.</span></div>
+          <p>रा ट्रेडिंग एकेडमी<br />Educational Consultant · Kolhapur, Maharashtra</p>
+        </div>
+        <div>
+          <h4>Explore</h4>
+          <a href="#about">About</a><a href="#courses">Courses</a><a href="#why">Why Us</a><a href="#reviews">Reviews</a>
+        </div>
+        <div>
+          <h4>Contact</h4>
+          <a href="tel:09665420707">096654 20707</a>
+          <a href="https://maps.google.com/?q=RA+Trading+Academy+Kolhapur" target="_blank" rel="noopener">Rajarampuri, Kolhapur</a>
+        </div>
+      </div>
+      <div class="footer__bottom">
+        <span>© <span id="year"></span> RA Trading Academy. All rights reserved.</span>
+        <span>Trading involves risk. Educational purposes only.</span>
+      </div>
+    </footer>
+  </main>
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js"></script>
+  <script src="assets/js/main.js"></script>
+</body>
+</html>
