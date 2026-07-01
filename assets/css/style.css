@@ -228,7 +228,18 @@ body::after{content:'';position:fixed;inset:0;z-index:-1;opacity:.4;pointer-even
 
 /* ============ Footer ============ */
 .footer{padding:clamp(56px,8vw,100px) clamp(20px,6vw,110px) 36px;border-top:1px solid var(--line-2);overflow:hidden}
-.footer__big{font-family:'Space Grotesk';font-weight:700;font-size:clamp(38px,12vw,170px);letter-spacing:-.04em;line-height:.9;color:transparent;-webkit-text-stroke:1px rgba(155,235,74,.14);text-align:center;margin-bottom:64px}
+.footer__big{position:relative;display:block;text-align:center;margin-bottom:64px;cursor:none;-webkit-user-select:none;user-select:none}
+.footer__big-base,.footer__big-fill{font-family:'Space Grotesk';font-weight:700;font-size:clamp(52px,17vw,240px);letter-spacing:-.04em;line-height:.86;display:block}
+/* outlined default state */
+.footer__big-base{color:transparent;-webkit-text-stroke:1.2px rgba(255,255,255,.16)}
+/* red fill revealed as a spotlight around the cursor */
+.footer__big-fill{position:absolute;inset:0;color:#ff1712;-webkit-text-stroke:0;
+  text-shadow:0 0 22px rgba(255,23,18,.65),0 0 60px rgba(255,23,18,.45);
+  opacity:0;transition:opacity .35s var(--ease);
+  --mx:50%;--my:50%;
+  -webkit-mask:radial-gradient(circle 190px at var(--mx) var(--my),#000 0%,rgba(0,0,0,.4) 45%,transparent 70%);
+  mask:radial-gradient(circle 190px at var(--mx) var(--my),#000 0%,rgba(0,0,0,.4) 45%,transparent 70%)}
+.footer__big:hover .footer__big-fill{opacity:1}
 .footer__grid{display:grid;grid-template-columns:1.4fr 1fr 1fr;gap:40px;padding-bottom:44px;border-bottom:1px solid var(--line-2)}
 .footer__mark{font-family:'Space Grotesk';font-weight:700;font-size:28px;margin-bottom:16px}
 .footer__mark span{color:var(--lime)}

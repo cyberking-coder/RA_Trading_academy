@@ -118,6 +118,22 @@
     gsap.to('.footer__big', { xPercent: -6, ease: 'none', scrollTrigger: { trigger: '.footer', start: 'top bottom', end: 'bottom top', scrub: true } });
   }
 
+  /* ---------- Footer wordmark spotlight reveal ---------- */
+  const fb = document.getElementById('footerBig');
+  const fill = fb && fb.querySelector('.footer__big-fill');
+  if (fb && fill) {
+    fb.addEventListener('mousemove', e => {
+      const r = fb.getBoundingClientRect();
+      fill.style.setProperty('--mx', (e.clientX - r.left) + 'px');
+      fill.style.setProperty('--my', (e.clientY - r.top) + 'px');
+    });
+    // tint the custom cursor red over the wordmark
+    if (cursor) {
+      fb.addEventListener('mouseenter', () => { cursor.style.borderColor = '#ff1712'; if (dot) dot.style.background = '#ff1712'; });
+      fb.addEventListener('mouseleave', () => { cursor.style.borderColor = ''; if (dot) dot.style.background = ''; });
+    }
+  }
+
   /* ---------- Hero canvas — animated candlestick / particle field ---------- */
   const canvas = document.getElementById('heroCanvas');
   if (canvas && !reduce) {
