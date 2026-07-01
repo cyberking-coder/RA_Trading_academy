@@ -188,6 +188,21 @@ body::after{content:'';position:fixed;inset:0;z-index:-1;opacity:.4;pointer-even
 .globe__ring:nth-child(3){inset:38%}
 .globe__core{position:absolute;top:50%;left:50%;width:8px;height:8px;border-radius:50%;background:var(--lime);transform:translate(-50%,-50%);box-shadow:0 0 24px 6px rgba(155,235,74,.6)}
 @keyframes spin{to{transform:rotate(360deg)}}
+/* floating trading-symbol chips that fade in & out */
+.sym{position:absolute;left:var(--x);top:var(--y);transform:translate(-50%,-50%);
+  display:inline-flex;align-items:center;gap:5px;
+  padding:6px 12px;border:1px solid var(--line);border-radius:100px;
+  background:rgba(6,10,7,.72);backdrop-filter:blur(4px);
+  font-family:'Space Grotesk';font-size:clamp(10px,1.3vw,14px);font-weight:600;
+  color:var(--lime-soft);white-space:nowrap;
+  box-shadow:0 4px 20px -6px rgba(155,235,74,.4);
+  opacity:0;animation:symFade 6s var(--d,0s) ease-in-out infinite}
+.sym em{font-style:normal;color:var(--muted);font-weight:400;font-size:.82em}
+@keyframes symFade{
+  0%,100%{opacity:0;transform:translate(-50%,-50%) scale(.85)}
+  12%,42%{opacity:1;transform:translate(-50%,-50%) scale(1)}
+  54%{opacity:0;transform:translate(-50%,-50%) scale(.9)}
+}
 .about__title{font-size:clamp(30px,4.4vw,54px);margin:18px 0 20px;font-weight:500}
 .about__content>p{color:var(--muted);max-width:520px;margin-bottom:26px}
 .about__card{border:1px solid var(--line);border-radius:var(--radius);padding:26px;background:linear-gradient(160deg,rgba(155,235,74,.05),transparent)}
@@ -206,7 +221,6 @@ body::after{content:'';position:fixed;inset:0;z-index:-1;opacity:.4;pointer-even
 .reviews__track{display:flex;flex-direction:column;gap:18px}
 .reviews__row{display:flex;gap:18px;width:max-content;animation:slide 42s linear infinite}
 .reviews__row:nth-child(2){animation-direction:reverse;animation-duration:52s}
-.reviews:hover .reviews__row{animation-play-state:paused}
 @keyframes slide{to{transform:translateX(-50%)}}
 .rcard{width:min(400px,80vw);flex-shrink:0;padding:30px;border:1px solid var(--line-2);border-radius:var(--radius);background:linear-gradient(160deg,var(--panel-2),var(--panel))}
 .rcard blockquote{font-size:15px;margin:14px 0 20px;color:#d6e4d9}
