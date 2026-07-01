@@ -3,16 +3,14 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>RA Trading Academy — Master the Markets · Kolhapur</title>
-  <meta name="description" content="RA Trading Academy (रा ट्रेडिंग एकेडमी) — Kolhapur's premier Forex & stock market trading institute. 5.0★ rated by 578 students. Learn trading from expert mentors." />
+  <title>RA Trading Academy — Trading Education for Forex & Markets · Kolhapur</title>
+  <meta name="description" content="RA Trading Academy (रा ट्रेडिंग एकेडमी) — Kolhapur's premier Forex & stock market trading institute. 5.0★ rated by 578 students. Learn to trade from expert mentors." />
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Space+Grotesk:wght@400;500;600;700&display=swap" rel="stylesheet" />
   <link rel="stylesheet" href="assets/css/style.css" />
-  <link rel="preconnect" href="https://cdnjs.cloudflare.com" />
 </head>
 <body>
-  <!-- Custom cursor -->
   <div class="cursor" id="cursor"></div>
   <div class="cursor-dot" id="cursorDot"></div>
 
@@ -25,197 +23,198 @@
     </div>
   </div>
 
-  <!-- Scroll progress -->
   <div class="scroll-progress" id="scrollProgress"></div>
-
-  <!-- Grain overlay -->
   <div class="grain"></div>
 
   <!-- Navigation -->
   <header class="nav" id="nav">
-    <a href="#hero" class="nav__brand" data-hover>
-      <span class="nav__mark">RA</span>
-      <span class="nav__name">Trading Academy</span>
-    </a>
-    <nav class="nav__links">
-      <a href="#about" data-hover>About</a>
+    <nav class="nav__links nav__links--left">
       <a href="#courses" data-hover>Courses</a>
-      <a href="#why" data-hover>Why Us</a>
+      <a href="#about" data-hover>About Us</a>
+      <a href="#ecosystem" data-hover>Ecosystem</a>
       <a href="#reviews" data-hover>Reviews</a>
-      <a href="#contact" data-hover>Contact</a>
     </nav>
-    <a href="tel:09665420707" class="nav__cta" data-hover>
-      <span>Book a Free Demo</span>
+    <a href="#hero" class="nav__brand" data-hover>
+      <span class="nav__logo-mark">◆</span>
+      <span class="nav__name">RA Trading<em>Academy</em></span>
     </a>
+    <div class="nav__right">
+      <span class="nav__lang" data-hover>EN</span>
+      <a href="#contact" class="nav__cta" data-hover><span>Contact</span></a>
+    </div>
     <button class="nav__burger" id="burger" aria-label="Menu"><span></span><span></span></button>
   </header>
 
-  <!-- Mobile menu -->
   <div class="menu" id="menu">
-    <a href="#about">About</a>
     <a href="#courses">Courses</a>
-    <a href="#why">Why Us</a>
+    <a href="#about">About Us</a>
+    <a href="#ecosystem">Ecosystem</a>
     <a href="#reviews">Reviews</a>
-    <a href="#contact">Contact</a>
-    <a href="tel:09665420707" class="menu__cta">Book a Free Demo →</a>
+    <a href="#contact" class="menu__cta">Contact →</a>
   </div>
 
-  <main data-scroll-container>
+  <main>
 
     <!-- HERO -->
     <section class="hero" id="hero">
       <canvas id="heroCanvas"></canvas>
       <div class="hero__glow"></div>
       <div class="hero__inner">
-        <div class="hero__badge reveal">
-          <span class="pulse"></span> Kolhapur's #1 Rated Trading Institute · ★ 5.0 (578)
-        </div>
+        <div class="pill reveal"><span class="pill__ico">◈</span> Trade Smarter. Grow Faster</div>
         <h1 class="hero__title">
-          <span class="line"><span>Trade with</span></span>
-          <span class="line"><span class="grad">Confidence.</span></span>
-          <span class="line"><span>Master the</span></span>
-          <span class="line"><span class="grad">Markets.</span></span>
+          <span class="line"><span>Trading <b>Education</b> for</span></span>
+          <span class="line"><span>Forex &amp; <b>Markets</b></span></span>
         </h1>
         <p class="hero__sub reveal">
-          रा ट्रेडिंग एकेडमी — where beginners become disciplined, profitable traders.
-          Learn Forex, stocks & technical analysis from mentors who trade for a living.
+          RA Trading Academy is a complete learning ecosystem tailored to Forex and
+          stock-market trading — built for absolute beginners and aspiring pros alike.
         </p>
         <div class="hero__actions reveal">
-          <a href="#courses" class="btn btn--primary" data-hover><span>Explore Courses</span><i>→</i></a>
-          <a href="#contact" class="btn btn--ghost" data-hover><span>Book Free Demo</span></a>
+          <a href="#contact" class="btn btn--primary" data-hover><span>Book a Free Demo</span><i>→</i></a>
+          <a href="#courses" class="btn btn--ghost" data-hover><span>Explore Courses</span></a>
         </div>
-        <div class="hero__stats reveal">
+
+        <!-- Dashboard mockup -->
+        <div class="mock reveal">
+          <div class="mock__panel mock__panel--left">
+            <div class="mock__head"><span class="dot"></span><span class="dot"></span><span class="dot"></span><small>Live Session</small></div>
+            <div class="mock__balance">
+              <span>Account Balance</span>
+              <b>₹ 1,24,860</b>
+              <em class="up">▲ +18.4% this month</em>
+            </div>
+            <div class="mock__bars">
+              <i style="--h:40%"></i><i style="--h:65%"></i><i style="--h:45%"></i><i style="--h:80%"></i><i style="--h:60%"></i><i style="--h:95%"></i><i style="--h:72%"></i>
+            </div>
+          </div>
+
+          <div class="mock__chart">
+            <svg viewBox="0 0 520 240" preserveAspectRatio="none" aria-hidden="true">
+              <defs>
+                <linearGradient id="fill" x1="0" y1="0" x2="0" y2="1">
+                  <stop offset="0%" stop-color="rgba(155,235,74,.35)"/>
+                  <stop offset="100%" stop-color="rgba(155,235,74,0)"/>
+                </linearGradient>
+              </defs>
+              <path class="area" d="M0,190 C60,170 90,120 140,140 C190,160 220,90 270,110 C320,130 350,60 400,80 C450,100 490,40 520,55 L520,240 L0,240 Z" fill="url(#fill)"/>
+              <path class="stroke" d="M0,190 C60,170 90,120 140,140 C190,160 220,90 270,110 C320,130 350,60 400,80 C450,100 490,40 520,55" fill="none" stroke="#9BEB4A" stroke-width="2.5"/>
+            </svg>
+            <div class="mock__pricepin">
+              <small>Mar 7 2023, 12:53:31 a.m.</small>
+              <b>Price 0.967</b>
+            </div>
+          </div>
+
+          <div class="mock__panel mock__panel--right">
+            <div class="mock__head"><small>USD / EUR</small><em class="up">+2.4%</em></div>
+            <div class="mock__big">100.00</div>
+            <div class="mock__spark"></div>
+            <div class="mock__tag">Super 20% Return</div>
+          </div>
+        </div>
+      </div>
+      <div class="hero__scroll"><span>Scroll</span><div class="hero__scroll-line"></div></div>
+    </section>
+
+    <!-- TRUSTED PARTNERS -->
+    <section class="partners" id="partners">
+      <div class="pill pill--center reveal"><span class="pill__ico">✦</span> Trusted By 578+ Students</div>
+      <h2 class="partners__title reveal">Learners from across <em>Kolhapur &amp; beyond</em></h2>
+      <div class="partners__row reveal">
+        <span>◈ Synergy</span>
+        <span>❖ Stellar</span>
+        <span>✦ Enigma</span>
+        <span>◆ Spectrum</span>
+        <span>◉ Vertex</span>
+        <span>✧ Apex</span>
+      </div>
+    </section>
+
+    <!-- OUR COURSES (products grid) -->
+    <section class="products" id="courses">
+      <div class="section-head">
+        <div class="pill reveal"><span class="pill__ico">◆</span> Our Courses</div>
+        <h2 class="section-title reveal">Programs crafted to make you <em>profitable</em></h2>
+      </div>
+      <div class="products__grid">
+        <article class="pcard pcard--wide reveal" data-tilt>
+          <div class="pcard__label">Flagship Program</div>
+          <h3>Forex Trading Mastery</h3>
+          <p>A complete standalone program tailored to Forex specifics — currency pairs, sessions, leverage and a full professional playbook. Our most-loved course.</p>
+          <div class="pcard__glow"></div>
+          <div class="pcard__mock">
+            <div class="pcard__mockbar" style="--h:50%"></div>
+            <div class="pcard__mockbar" style="--h:75%"></div>
+            <div class="pcard__mockbar" style="--h:40%"></div>
+            <div class="pcard__mockbar" style="--h:90%"></div>
+            <div class="pcard__mockbar" style="--h:65%"></div>
+          </div>
+        </article>
+        <article class="pcard reveal" data-tilt>
+          <div class="pcard__ico">◈</div>
+          <h3>Technical Analysis Pro</h3>
+          <p>Indicators, chart patterns, support &amp; resistance and multi-timeframe analysis that actually works.</p>
+        </article>
+        <article class="pcard reveal" data-tilt>
+          <div class="pcard__ico">❖</div>
+          <h3>Price Action &amp; Candlesticks</h3>
+          <p>Read raw price like a pro — candlestick psychology, market structure and high-probability entries.</p>
+        </article>
+        <article class="pcard pcard--wide reveal" data-tilt>
+          <div class="pcard__label">Essential</div>
+          <h3>Risk &amp; Money Management</h3>
+          <p>The skill that keeps traders alive — position sizing, risk-reward, drawdown control and trading psychology built into every lesson.</p>
+          <div class="pcard__glow"></div>
+        </article>
+      </div>
+    </section>
+
+    <!-- ECOSYSTEM / INTEGRATIONS -->
+    <section class="ecosystem" id="ecosystem">
+      <div class="section-head">
+        <div class="pill reveal"><span class="pill__ico">◉</span> The Learning Ecosystem</div>
+        <h2 class="section-title reveal">Everything you need in <em>one place</em></h2>
+      </div>
+      <div class="eco__grid">
+        <div class="eco__item reveal"><div class="eco__ico">◆</div><h4>Live Classes</h4><p>Guided, hands-on sessions on real charts.</p></div>
+        <div class="eco__item reveal"><div class="eco__ico">◈</div><h4>Doubt Support</h4><p>Lifetime doubt-clearing with mentors.</p></div>
+        <div class="eco__item reveal"><div class="eco__ico">❖</div><h4>Small Batches</h4><p>Personal attention, faster progress.</p></div>
+        <div class="eco__item reveal"><div class="eco__ico">✦</div><h4>Practice Labs</h4><p>Apply strategies in simulated markets.</p></div>
+        <div class="eco__item reveal"><div class="eco__ico">◉</div><h4>Strategy Toolkit</h4><p>Your own tested, personal trading plan.</p></div>
+        <div class="eco__item reveal"><div class="eco__ico">✧</div><h4>Community</h4><p>A friendly network that grows with you.</p></div>
+      </div>
+    </section>
+
+    <!-- WHO WE ARE + globe -->
+    <section class="about" id="about">
+      <div class="about__globe reveal">
+        <div class="globe"><div class="globe__ring"></div><div class="globe__ring"></div><div class="globe__ring"></div><div class="globe__core"></div></div>
+      </div>
+      <div class="about__content">
+        <div class="pill reveal"><span class="pill__ico">◆</span> Education at Heart</div>
+        <h2 class="about__title reveal">Who <em>we are</em></h2>
+        <p class="reveal">Based in the heart of Rajarampuri, Kolhapur, RA Trading Academy is an educational consultancy built on one belief: anyone can learn to trade well when they're taught properly. No hype, no shortcuts — just proven strategies, hands-on practice and honest mentoring.</p>
+        <div class="about__card reveal">
+          <h4>All-in-One Trading Ecosystem</h4>
+          <p>RA Trading Academy provides a fully-integrated, in-house learning ecosystem centred around our proprietary teaching method — designed for both beginners and serious aspiring traders.</p>
+        </div>
+        <div class="about__stats reveal">
           <div class="stat"><b data-count="578">0</b><small>5★ Reviews</small></div>
           <div class="stat"><b data-count="2000" data-suffix="+">0</b><small>Students Trained</small></div>
-          <div class="stat"><b data-count="7" data-suffix="+">0</b><small>Years Experience</small></div>
-          <div class="stat"><b data-count="98" data-suffix="%">0</b><small>Would Recommend</small></div>
+          <div class="stat"><b data-count="7" data-suffix="+">0</b><small>Years</small></div>
+          <div class="stat"><b data-count="98" data-suffix="%">0</b><small>Recommend</small></div>
         </div>
-      </div>
-      <div class="hero__scroll">
-        <span>Scroll</span>
-        <div class="hero__scroll-line"></div>
-      </div>
-    </section>
-
-    <!-- MARQUEE -->
-    <div class="marquee">
-      <div class="marquee__track">
-        <span>Forex Trading</span><i>✦</i><span>Technical Analysis</span><i>✦</i><span>Risk Management</span><i>✦</i><span>Price Action</span><i>✦</i><span>Live Sessions</span><i>✦</i><span>Candlestick Patterns</span><i>✦</i>
-        <span>Forex Trading</span><i>✦</i><span>Technical Analysis</span><i>✦</i><span>Risk Management</span><i>✦</i><span>Price Action</span><i>✦</i><span>Live Sessions</span><i>✦</i><span>Candlestick Patterns</span><i>✦</i>
-      </div>
-    </div>
-
-    <!-- ABOUT -->
-    <section class="about" id="about">
-      <div class="about__label reveal"><span></span>About the Academy</div>
-      <div class="about__grid">
-        <h2 class="about__head split">
-          We turn market curiosity into <em>real trading skill</em> — with structure, discipline and mentorship.
-        </h2>
-        <div class="about__body">
-          <p class="reveal">Based in the heart of Rajarampuri, Kolhapur, RA Trading Academy is an educational consultancy built on one belief: anyone can learn to trade well when they're taught properly. No hype, no shortcuts — just proven strategies, hands-on practice and honest mentoring.</p>
-          <p class="reveal">From your very first candlestick to managing risk like a professional, our step-by-step curriculum meets you where you are and takes you where you want to go.</p>
-          <div class="about__pills reveal">
-            <span>SEBI-aware teaching</span>
-            <span>Small batches</span>
-            <span>Lifetime doubt support</span>
-            <span>Live market practice</span>
-          </div>
-        </div>
-      </div>
-      <div class="about__cards">
-        <article class="acard reveal" data-tilt>
-          <div class="acard__num">01</div>
-          <h3>Learn the Foundations</h3>
-          <p>Markets, charts, terminology and psychology — a rock-solid base built for absolute beginners.</p>
-        </article>
-        <article class="acard reveal" data-tilt>
-          <div class="acard__num">02</div>
-          <h3>Practice Live</h3>
-          <p>Apply setups on real charts in guided sessions until reading price becomes second nature.</p>
-        </article>
-        <article class="acard reveal" data-tilt>
-          <div class="acard__num">03</div>
-          <h3>Trade Independently</h3>
-          <p>Graduate with a personal strategy, a risk plan and the discipline to execute it consistently.</p>
-        </article>
-      </div>
-    </section>
-
-    <!-- COURSES -->
-    <section class="courses" id="courses">
-      <div class="section-head">
-        <div class="about__label reveal"><span></span>Our Programs</div>
-        <h2 class="section-title split">Courses crafted to <em>make you profitable</em></h2>
-      </div>
-      <div class="courses__list">
-        <article class="course reveal" data-hover>
-          <div class="course__index">01</div>
-          <div class="course__main">
-            <h3>Forex Trading Mastery</h3>
-            <p>Currency pairs, sessions, leverage & a complete Forex playbook — our flagship, most-loved program.</p>
-          </div>
-          <div class="course__meta"><span>Beginner → Advanced</span><span>8 Weeks</span></div>
-          <div class="course__arrow">→</div>
-        </article>
-        <article class="course reveal" data-hover>
-          <div class="course__index">02</div>
-          <div class="course__main">
-            <h3>Technical Analysis Pro</h3>
-            <p>Indicators, chart patterns, support & resistance and multi-timeframe analysis that actually works.</p>
-          </div>
-          <div class="course__meta"><span>Intermediate</span><span>6 Weeks</span></div>
-          <div class="course__arrow">→</div>
-        </article>
-        <article class="course reveal" data-hover>
-          <div class="course__index">03</div>
-          <div class="course__main">
-            <h3>Price Action &amp; Candlesticks</h3>
-            <p>Read raw price like a pro — candlestick psychology, structure and high-probability entries.</p>
-          </div>
-          <div class="course__meta"><span>All Levels</span><span>4 Weeks</span></div>
-          <div class="course__arrow">→</div>
-        </article>
-        <article class="course reveal" data-hover>
-          <div class="course__index">04</div>
-          <div class="course__main">
-            <h3>Risk &amp; Money Management</h3>
-            <p>The skill that keeps traders alive — position sizing, R:R, drawdown control and trading psychology.</p>
-          </div>
-          <div class="course__meta"><span>Essential</span><span>2 Weeks</span></div>
-          <div class="course__arrow">→</div>
-        </article>
-      </div>
-    </section>
-
-    <!-- WHY US -->
-    <section class="why" id="why">
-      <div class="why__bg"></div>
-      <div class="section-head">
-        <div class="about__label reveal"><span></span>Why RA Trading Academy</div>
-        <h2 class="section-title split">Students rate us <em>5.0 out of 5</em> — here's why</h2>
-      </div>
-      <div class="why__grid">
-        <div class="why__item reveal"><div class="why__ico">◈</div><h3>Expert Mentors</h3><p>Learn from active traders with real, knowledgeable and friendly guidance every step.</p></div>
-        <div class="why__item reveal"><div class="why__ico">◆</div><h3>Proven Method</h3><p>A teaching method praised across 578 reviews for being clear, patient and beginner-friendly.</p></div>
-        <div class="why__item reveal"><div class="why__ico">❖</div><h3>Doubt Clearing</h3><p>"All doubt clearing" — supportive staff who make sure no question goes unanswered.</p></div>
-        <div class="why__item reveal"><div class="why__ico">✦</div><h3>Welcoming Space</h3><p>A friendly, professional environment where beginners feel comfortable from day one.</p></div>
-        <div class="why__item reveal"><div class="why__ico">◉</div><h3>Practical Focus</h3><p>Hands-on, live-market learning — not just theory, but skills you can actually trade with.</p></div>
-        <div class="why__item reveal"><div class="why__ico">✧</div><h3>Ongoing Support</h3><p>Soft-skills coaching and support staff that stay with you well beyond the classroom.</p></div>
       </div>
     </section>
 
     <!-- REVIEWS -->
     <section class="reviews" id="reviews">
       <div class="section-head">
-        <div class="about__label reveal"><span></span>What Students Say</div>
-        <h2 class="section-title split">578 five-star reviews &amp; <em>counting</em></h2>
-        <div class="reviews__rating reveal">
-          <div class="stars">★★★★★</div>
-          <div><b>5.0</b> · 578 Google reviews</div>
-        </div>
+        <div class="pill reveal"><span class="pill__ico">★</span> What We Offer</div>
+        <h2 class="section-title reveal">578 five-star reviews &amp; <em>counting</em></h2>
+        <div class="reviews__rating reveal"><div class="stars">★★★★★</div><div><b>5.0</b> · 578 Google reviews</div></div>
       </div>
-      <div class="reviews__track" id="reviewsTrack">
+      <div class="reviews__track">
         <div class="reviews__row">
           <figure class="rcard"><div class="stars">★★★★★</div><blockquote>"I recently had the pleasure of attending RA Trading Academy, and it was an absolutely fantastic experience! From the moment I stepped in, I knew I was in for something special."</blockquote><figcaption><b>Kajal Sutar</b><span>Local Guide</span></figcaption></figure>
           <figure class="rcard"><div class="stars">★★★★★</div><blockquote>"Best Forex Academy in Kolhapur. It was absolutely a great learning experience. Would recommend people to go ahead and join them."</blockquote><figcaption><b>Hitesh Rohra</b><span>Student</span></figcaption></figure>
@@ -223,7 +222,7 @@
           <figure class="rcard"><div class="stars">★★★★★</div><blockquote>"A nice place for beginners and very friendly teaching. All staff and teachers are friendly and much knowledgeable."</blockquote><figcaption><b>Verified Student</b><span>Google Review</span></figcaption></figure>
         </div>
         <div class="reviews__row" aria-hidden="true">
-          <figure class="rcard"><div class="stars">★★★★★</div><blockquote>"I recently had the pleasure of attending RA Trading Academy, and it was an absolutely fantastic experience!"</blockquote><figcaption><b>Kajal Sutar</b><span>Local Guide</span></figcaption></figure>
+          <figure class="rcard"><div class="stars">★★★★★</div><blockquote>"I recently had the pleasure of attending RA Trading Academy — an absolutely fantastic experience!"</blockquote><figcaption><b>Kajal Sutar</b><span>Local Guide</span></figcaption></figure>
           <figure class="rcard"><div class="stars">★★★★★</div><blockquote>"Best Forex Academy in Kolhapur. Would recommend people to go ahead and join them."</blockquote><figcaption><b>Hitesh Rohra</b><span>Student</span></figcaption></figure>
           <figure class="rcard"><div class="stars">★★★★★</div><blockquote>"Good class, proper teaching and all doubt clearing."</blockquote><figcaption><b>Gopal Kumbhar</b><span>Student</span></figcaption></figure>
           <figure class="rcard"><div class="stars">★★★★★</div><blockquote>"A nice place for beginners and very friendly teaching."</blockquote><figcaption><b>Verified Student</b><span>Google Review</span></figcaption></figure>
@@ -231,11 +230,12 @@
       </div>
     </section>
 
-    <!-- CTA / CONTACT -->
+    <!-- CONTACT -->
     <section class="contact" id="contact">
       <div class="contact__inner">
         <div class="contact__left">
-          <h2 class="split">Ready to start your <em>trading journey?</em></h2>
+          <div class="pill reveal"><span class="pill__ico">◆</span> Get Started</div>
+          <h2 class="reveal">Ready to start your <em>trading journey?</em></h2>
           <p class="reveal">Book a free demo session and see how we teach. No pressure, no jargon — just an honest look at whether trading is right for you.</p>
           <div class="contact__actions reveal">
             <a href="tel:09665420707" class="btn btn--primary" data-hover><span>Call 096654 20707</span><i>→</i></a>
@@ -251,23 +251,15 @@
       </div>
     </section>
 
-    <!-- FOOTER -->
     <footer class="footer">
       <div class="footer__big">RA Trading Academy</div>
       <div class="footer__grid">
         <div>
-          <div class="footer__mark">RA<span>.</span></div>
+          <div class="footer__mark">◆ RA<span>.</span></div>
           <p>रा ट्रेडिंग एकेडमी<br />Educational Consultant · Kolhapur, Maharashtra</p>
         </div>
-        <div>
-          <h4>Explore</h4>
-          <a href="#about">About</a><a href="#courses">Courses</a><a href="#why">Why Us</a><a href="#reviews">Reviews</a>
-        </div>
-        <div>
-          <h4>Contact</h4>
-          <a href="tel:09665420707">096654 20707</a>
-          <a href="https://maps.google.com/?q=RA+Trading+Academy+Kolhapur" target="_blank" rel="noopener">Rajarampuri, Kolhapur</a>
-        </div>
+        <div><h4>Explore</h4><a href="#about">About</a><a href="#courses">Courses</a><a href="#ecosystem">Ecosystem</a><a href="#reviews">Reviews</a></div>
+        <div><h4>Contact</h4><a href="tel:09665420707">096654 20707</a><a href="https://maps.google.com/?q=RA+Trading+Academy+Kolhapur" target="_blank" rel="noopener">Rajarampuri, Kolhapur</a></div>
       </div>
       <div class="footer__bottom">
         <span>© <span id="year"></span> RA Trading Academy. All rights reserved.</span>

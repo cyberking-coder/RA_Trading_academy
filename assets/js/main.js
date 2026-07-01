@@ -152,18 +152,18 @@
           const dx = a.x - b.x, dy = a.y - b.y;
           const d = Math.sqrt(dx * dx + dy * dy);
           if (d < 140 * dpr) {
-            ctx.strokeStyle = `rgba(245,196,81,${(1 - d / (140 * dpr)) * 0.14})`;
+            ctx.strokeStyle = `rgba(155,235,74,${(1 - d / (140 * dpr)) * 0.16})`;
             ctx.lineWidth = 0.6 * dpr;
             ctx.beginPath(); ctx.moveTo(a.x, a.y); ctx.lineTo(b.x, b.y); ctx.stroke();
           }
         }
-        ctx.fillStyle = 'rgba(34,227,154,.5)';
+        ctx.fillStyle = 'rgba(63,174,111,.55)';
         ctx.beginPath(); ctx.arc(a.x, a.y, a.r, 0, Math.PI * 2); ctx.fill();
       }
       // animated trend line
       t += 0.006;
       ctx.beginPath();
-      ctx.strokeStyle = 'rgba(123,92,255,.25)';
+      ctx.strokeStyle = 'rgba(155,235,74,.22)';
       ctx.lineWidth = 1.4 * dpr;
       for (let x = 0; x <= w; x += 8 * dpr) {
         const y = h * 0.72 - Math.sin(x * 0.004 + t) * 40 * dpr - (x / w) * 120 * dpr + Math.sin(x * 0.01 + t * 2) * 12 * dpr;
