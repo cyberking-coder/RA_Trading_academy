@@ -246,9 +246,9 @@ body::after{content:'';position:fixed;inset:0;z-index:-1;opacity:.4;pointer-even
 .footer__big-base,.footer__big-fill{font-family:'Space Grotesk';font-weight:700;font-size:clamp(52px,17vw,240px);letter-spacing:-.04em;line-height:.86;display:block}
 /* outlined default state */
 .footer__big-base{color:transparent;-webkit-text-stroke:1.2px rgba(255,255,255,.16)}
-/* red fill revealed as a spotlight around the cursor */
-.footer__big-fill{position:absolute;inset:0;color:#ff1712;-webkit-text-stroke:0;
-  text-shadow:0 0 22px rgba(255,23,18,.65),0 0 60px rgba(255,23,18,.45);
+/* theme-colored fill revealed as a spotlight around the cursor */
+.footer__big-fill{position:absolute;inset:0;color:var(--lime);-webkit-text-stroke:0;
+  text-shadow:0 0 22px rgba(155,235,74,.65),0 0 60px rgba(155,235,74,.45);
   opacity:0;transition:opacity .35s var(--ease);
   --mx:50%;--my:50%;
   -webkit-mask:radial-gradient(circle 190px at var(--mx) var(--my),#000 0%,rgba(0,0,0,.4) 45%,transparent 70%);
