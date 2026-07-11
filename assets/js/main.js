@@ -127,9 +127,9 @@
       fill.style.setProperty('--mx', (e.clientX - r.left) + 'px');
       fill.style.setProperty('--my', (e.clientY - r.top) + 'px');
     });
-    // tint the custom cursor red over the wordmark
+    // tint the custom cursor with the theme color over the wordmark
     if (cursor) {
-      fb.addEventListener('mouseenter', () => { cursor.style.borderColor = '#ff1712'; if (dot) dot.style.background = '#ff1712'; });
+      fb.addEventListener('mouseenter', () => { cursor.style.borderColor = '#9beb4a'; if (dot) dot.style.background = '#9beb4a'; });
       fb.addEventListener('mouseleave', () => { cursor.style.borderColor = ''; if (dot) dot.style.background = ''; });
     }
   }
